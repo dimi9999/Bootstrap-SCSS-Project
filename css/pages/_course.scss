@@ -1,0 +1,55 @@
+// course block
+ 
+.sub-header {
+	height:50vh;
+	width:100%;
+	background-image: linear-gradient(
+	rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/background.jpg);
+	background-position:center;
+	background-size:cover;
+	text-align:center;
+	color:$white;
+	& h1 {
+		position:relative;
+		margin-top:100px;
+		 &:after {
+	        position: absolute;
+		    background: $darkred;
+		    height: 5px;
+		    width: 50px;
+		    content: '';
+		    border: 0;
+		    bottom: -36px;
+		    left: 50%;
+		    transform:translate(-50%);
+	    }
+	}
+}
+
+.courses {
+	width:80%;
+	margin:auto;
+	padding-top:80px;
+	padding-bottom:50px;
+
+	& .courses-col {
+		flex-basis:48%;
+		padding:30px 2px;
+
+		& img {
+			width:100%;
+		}
+		& h2 {
+			padding-top:0;
+		}
+		& p {
+			padding:15px 0 25px;
+		}
+	}
+}
+
+@media only screen and (max-widthj:767px) {
+	.courses {
+		text-align:center;
+	}	
+}

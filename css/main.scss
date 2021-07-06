@@ -1,0 +1,33 @@
+@import "bootstrap/bootstrap";
+@import "base/variables";
+@import "base/mixins";
+@import "base/reset";
+@import "base/typography";
+@import "base/helpers";
+
+// UI Fabric & Font Aweomse
+@import 'uifabric/fabric.css';
+@import 'fontawesome/stylesheets/font-awesome';
+
+// Layouts
+@import 'layouts/header';
+@import 'layouts/common';
+@import 'layouts/footer';
+
+// Pages
+@import 'pages/index';
+@import 'pages/about';
+@import 'pages/course';
+@import 'pages/blog';
+@import 'pages/contact';
+
+p {
+  color: $black;
+}
+
+.box {
+  @include size(500px, 300px);
+  background: $white;
+}
+ 
+ 
